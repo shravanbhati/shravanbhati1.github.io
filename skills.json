@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Firebase",
+        "icon": "https://img.icons8.com/color/48/000000/firebase.png"
+    },
+   
+    {
+        "name": "HTML5",
+        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+    },
+    {
+        "name": "CSS3",
+        "icon": "https://img.icons8.com/color/48/000000/css3.png"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    },
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+    },
+
+    {
+        "name": "MongoDB",
+        "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
+    },
+    {
+        "name": "Heroku",
+        "icon": "https://img.icons8.com/color/48/000000/heroku.png"
+    },
+    {
+        "name": "GitHub",
+        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+    },
+    {
+        "name": "WordPress",
+        "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
+    },   
+    {
+        "name": "Blogger",
+        "icon": "https://img.icons8.com/fluency/48/blogger.png"
+    },
+    {
+        "name": "Telegram",
+        "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/external-telegram-messenger-privately-held-company-with-cloud-based-instant-messaging-logo-shadow-tal-revivo.png" 
+    },   
+    {
+        "name": "Discord",
+        "icon": "https://img.icons8.com/color/48/discord-logo.png"
+    }
+
+]
