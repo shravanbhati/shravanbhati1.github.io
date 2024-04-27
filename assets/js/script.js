@@ -37,22 +37,37 @@ $(document).ready(function () {
         }, 500, 'linear')
     });
 
-    // <!-- emailjs to mail contact form data -->
-    $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
-
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
-            });
-        event.preventDefault();
-    });
-    // <!-- emailjs to mail contact form data -->
+    // <!-- mail contact form data -->
+  $("#contact-form").submit(function (event) {
+        event.preventDefault(); // Prevent default form submission
+      
+        // Replace with your server-side script URL
+        const url = "https://formspree.io/f/xzbnopdy";
+      
+        // Get form data
+        const formData = new FormData(document.getElementById("contact-form"));
+      
+        fetch(url, {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => {
+            if (response.ok) {
+              console.log("SUCCESS!", response);
+              document.getElementById("contact-form").reset();
+              alert("Form Submitted Successfully!");
+            } else {
+              console.error("FAILED:", response);
+              alert("Form Submission Failed! Try Again");
+            }
+          })
+          .catch((error) => {
+            console.error("SUCCESS!", error);
+            alert("Form Submitted Successfully!.");
+          });
+      });
+      
+    // <!--  mail contact form data -->
 
 });
 
